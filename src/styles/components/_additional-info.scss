@@ -1,0 +1,119 @@
+.additional-info {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    flex-basis: calc(50% - 15px);
+    padding: 40px;
+    position: relative;
+    border: 5px solid $orange;
+    border-radius: 18px;
+    @media (max-width: 767px) {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media (max-width: 600px) {
+      padding: 40px 25px;
+    }
+  }
+  &__bg-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    @media (max-width: 991px) {
+      width: 105px;
+      height: 105px;
+    }
+    img {
+      @media (max-width: 991px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    max-width: 280px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: $purple;
+    margin-bottom: 22px;
+    @media (max-width: 600px) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      max-width: 210px;
+    }
+    .icon {
+      width: 28px;
+      height: 28px;
+      margin-right: 2px;
+      display: inline;
+    }
+  }
+  &__subtitle {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    max-width: 290px;
+    text-decoration: underline;
+    text-decoration-color: $orange;
+    text-decoration-thickness: 3px;
+    @media (max-width: 600px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 17px;
+    }
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 21px;
+    color: $gray;
+    margin-bottom: 34px;
+    @media (max-width: 600px) {
+      margin-bottom: 17px;
+    }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+  &__social {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: $orange-gradient;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    transition: .2s ease-in-out;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      filter: brightness(1.09);
+      transition: .2s ease-in-out;
+    }
+    svg {
+      fill: $white;
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

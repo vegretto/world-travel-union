@@ -1,0 +1,393 @@
+.tours-wrapper {
+  display: flex;
+  &--sm {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -15px 0;
+    @media (max-width: 991px) {
+      justify-content: center;
+      margin: 0;
+    }
+  }
+}
+
+.tours-item {
+  box-shadow: 0 0 10px #ddd;
+  &__closest-dates {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: $purple;
+    color: $white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    @media (max-width: 600px) {
+      position: static;
+      border-radius: 0;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+    }
+    span {
+      margin-right: 10px;
+    }
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+  &__img {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    @media (max-width: 600px) {
+      background-color: $purple;
+    }
+    img {
+      width: 100%;
+      max-height: 340px;
+      object-fit: cover;
+      border-radius: 15px;
+      overflow: hidden;
+      @media (max-width: 600px) {
+        height: auto;
+      }
+    }
+  }
+  &__tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -2px 17px;
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+    }
+  }
+  &__tag {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    margin: 0 2px;
+    white-space: nowrap;
+    @media (max-width: 600px) {
+      font-size: 12px;
+      line-height: 15px;
+      padding: 8px 12px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &--purple {
+      color: $purple;
+      border-color: $purple;
+    }
+    &--orange {
+      color: $orange;
+      border-color: $orange;
+    }
+    &--gradient {
+      color: $white;
+      background: $purple-gradient;
+    }
+    &--blue {
+      color: #009EFD;
+      border-color: #009EFD;
+    }
+  }
+  &__region {
+    text-align: center;
+    text-transform: uppercase;
+    color: $c4-light-gray;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 6px;
+    @media (max-width: 600px) {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 3px;
+    }
+  }
+  &__name {
+    display: block;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px;
+    @media (max-width: 600px) {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 9px;
+    }
+    &:hover {
+      text-decoration-color: $black;
+    }
+  }
+  &__description {
+    font-size: 15px;
+    line-height: 21px;
+    color: $gray;
+    margin-bottom: auto;
+    padding-bottom: 30px;
+    @media (max-width: 600px) {
+      font-size: 14px;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -3px 25px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      margin: -3px 0 13px;
+    }
+  }
+  &__inner-item {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: $white;
+    border-radius: 50px;
+    margin: 0 3px;
+    flex-basis: 50%;
+    @media (max-width: 600px) {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 3px 0;
+      padding: 8px 17px;
+      flex-basis: auto;
+    }
+    &--duration {
+      color: $purple;
+      flex-shrink: 0;
+      text-align: center;
+    }
+    &--price {
+      background: 0;
+      color: #FF972F;
+      font-size: 30px;
+      line-height: 37px;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 600px) {
+        justify-content: center;
+      }
+    }
+  }
+  &__price-a-day {
+    margin-bottom: 5px;
+    flex-basis: 100%;
+    text-align: left;
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+  }
+  &__price-total {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    margin-right: 5px;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 14px;
+      color: $green;
+    }
+  }
+  &__label-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: $blue-gradient;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .btns-wrapper {
+    margin-bottom: 20px;
+  }
+  &__hr {
+    width: calc(100% + 100px);
+    height: 1px;
+    background-color: $light-gray;
+    margin: 0 -50px 8px;
+  }
+  &__hashtags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+    a {
+      font-size: 15px;
+      line-height: 24px;
+      color: #009EFD;
+      margin: 0 5px;
+      &:hover {
+        text-decoration-color: #009EFD;
+      }
+      @media (max-width: 600px) {
+        font-size: 13px;
+        line-height: 24px;
+      }
+    }
+  }
+  &--sm {
+    border-radius: 15px;
+    overflow: hidden;
+    flex-basis: calc(50% - 15px);
+    background-color: $white;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 991px) {
+      flex-basis: 100%;
+      max-width: 570px;
+      margin: 0 0 15px 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .tours-item__content {
+        padding: 15px 45px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        @media (max-width: 767px) {
+          padding: 7px 20px 10px;
+        }
+      }
+  }
+  &--lg {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%;
+    .tours-item {
+      &__left {
+        flex-basis: 330px;
+        max-width: 330px;
+        flex-shrink: 0;
+      }
+      &__img {
+        flex-basis: 470px;
+        max-width: 470px;
+        margin: 0 20px;
+        img {
+          max-height: 412px;
+        }
+      }
+      &__right {
+        flex-basis: 245px;
+        max-width: 245px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 70px;
+        flex-shrink: 0;
+      }
+      &__tags {
+        justify-content: flex-start;
+        margin-bottom: 30px;
+      }
+      &__region {
+        text-align: left;
+      }
+      &__name {
+        text-align: left;
+      }
+      &__description {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+      &__btn {
+        font-family: 'Gilroy', sans-serif;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: $white;
+        padding: 8px 22px;
+        border-radius: 50px;
+        margin-bottom: 17px;
+        border: none;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        &:hover {
+          filter: brightness(1.07);
+          transition: .2s ease-in-out;
+        }
+        @media (max-width: 600px) {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 8px 17px;
+        }
+        &--program {
+          background: $green-gradient;
+        }
+        &--dates {
+          background: $orange-gradient;
+        }
+        &--request {
+          background-color: #EDF6FB;
+          color: $purple;
+        }
+      }
+
+      &__hashtags {
+        justify-content: flex-start;
+      }
+      &__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: auto;
+      }
+      &__inner-item {
+        margin-bottom: 15px;
+        flex-basis: auto;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &--duration {
+          background: none;
+          color: $purple;
+          padding: 0;
+        }
+      }
+      &__btns-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

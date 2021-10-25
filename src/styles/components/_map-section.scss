@@ -1,0 +1,39 @@
+.map-section {
+  &__wrapper {
+    position: relative;
+  }
+  &__map-container {
+    width: 100%;
+    height: 400px;
+    @media (max-width: 767px) {
+      height: 300px;
+    }
+  }
+  &__address {
+    max-width: 520px;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(124.91deg, #522478 27.35%, #6E48AA 91.75%);
+    border-radius: 15px;
+    color: $white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @media (max-width: 767px) {
+      position: relative;
+      max-width: none;
+    }
+  }
+  &__address-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  &__address-phone {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $white;
+  }
+}

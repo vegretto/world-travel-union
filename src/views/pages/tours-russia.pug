@@ -1,0 +1,88 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--tours-russia
+        .container
+            .breadcrumbs
+                a(href="#").breadcrumbs__item Хлебные крошки
+                a(href="#").breadcrumbs__item Хлебные крошки
+                .breadcrumbs__item Хлебные крошки
+            h2.h2-common.txt-left Открывайте удивительную и бескрайнюю Россию
+            .sub-text.txt-left
+                ._underlined Отправляйтесь в путешествие прямо сегодня — без лишних документов, гидов-переводчиков и долгих раздумий
+        .craft-examples
+            ._container.container
+                ._items
+                    ._item
+                        video._video(autoplay loop muted width="370" height="480")
+                            source(src='video/07.mp4' type='video/mp4')
+                        ._text Южные пляжи, шум моря и курортная жизнь
+                    ._item
+                        video._video(autoplay loop muted width="370" height="480")
+                            source(src='video/08.mp4' type='video/mp4')
+                        ._text Вулканы, маяки и черные пески Сахалина и Камчатки
+                    ._item
+                        video._video(autoplay loop muted width="370" height="480")
+                            source(src='video/09.mp4' type='video/mp4')
+                        ._text Завораживающий Север: замерзшие озера, величественные олени и северное сияние
+        .container
+            section
+                .h1-common.txt-orange.txt-center Выберите свой идеальный отдых<br> или оставьте заявку на поиск тура
+                <div class="tv-search-form tv-moduleid-199200"></div>
+            .book-tour
+                h2.h2-common Расскажите о вашей мечте, <br> и мы построим к ней маршрут
+                form._common-form.common-form
+                    ._inner
+                        ._left
+                            +form-group('text', 'tp-name', 'Имя*', true, 'input-common', 'label-common', 'Имя')
+                            +form-group('tel', 'tp-tel', 'Телефон*', true, 'input-common', 'label-common', '+7 (___) ___–__–__')
+                            .fg-wrapper
+                                +form-group('email', 'tp-email', 'E-mail', false, 'input-common', 'label-common', 'example@pochta.ru')
+                                +form-group('number', 'tp-num', 'Количество человек', true, 'input-common input-common-w-icon', 'label-common', '1')
+                        ._right
+                            +form-group-date('tp-date', 'Даты', true, 'input-common', 'label-common', 'Укажите даты или месяц')
+                            +form-group-textarea('tp-comment', 'Ваши пожелания или вопрос', true, '', 'input-common', 'label-common', 'Здесь вы можете указать желаемый тип проживания, питания, развлечений или задать любой другой вопрос')
+                    .btns-wrapper
+                        button.common-btn.common-btn--lg.common-btn--orange Отправить
+                        +form-group-checkbox-allow('tp-allow', true, true, 'custom-checkbox', 'custom-checkbox__label')
+        section.seo-text-section
+            include ../components/seo-text
+        section.popular-tour-selection-wrapper
+            .popular-tour-selection
+                ._container.container
+                    ._inner
+                        h2.h2-common.txt-left Популярные подборки туров
+                        ._items
+                            ._col
+                                a(href="#")._item #Активные туры
+                                a(href="#")._item #Активные туры в Азкабан
+                                a(href="#")._item #Трекинг
+                                a(href="#")._item #Трекинг по лесам Азии
+                            ._col
+                                a(href="#")._item #Активные туры
+                                a(href="#")._item #Активные туры в Азкабан
+                                a(href="#")._item #Трекинг
+                                a(href="#")._item #Трекинг по лесам Азии
+                            ._col
+                                a(href="#")._item #Активные туры
+                                a(href="#")._item #Активные туры в Азкабан
+                                a(href="#")._item #Трекинг
+                                a(href="#")._item #Трекинг по лесам Азии
+                            ._col
+                                a(href="#")._item #Активные туры
+                                a(href="#")._item #Активные туры в Азкабан
+                                a(href="#")._item #Трекинг
+                                a(href="#")._item #Трекинг по лесам Азии
+                        .btns-wrapper
+                            button.common-btn.common-btn--orange Смотреть все подборки
+        section.additional-info-section
+            include ../components/additional-info
+
+
+
+
+block footer
+    include ../components/footer

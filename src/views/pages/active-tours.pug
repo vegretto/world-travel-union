@@ -1,0 +1,35 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--active-tours
+        .blue-bg
+            .container
+                .breadcrumbs
+                    a(href="#").breadcrumbs__item Хлебные крошки
+                    a(href="#").breadcrumbs__item Хлебные крошки
+                    .breadcrumbs__item Хлебные крошки
+                h1.h1-common Активные туры по всему миру
+                include ../components/tours-filter
+                include ../components/filter-results
+            section.tours-section
+                include ../components/tours-sm
+                .btns-wrapper.-more
+                    button.common-btn.common-btn--lg.common-btn--orange Показать ещё
+            section.tours-section.tablet-hide
+                include ../components/tours-lg
+        section.promo-section.white-bg
+            include ../components/promo
+        section.banner-fw-section
+            include ../components/banner-fw
+        section.testimonials-section
+            include ../components/testimonials
+        section.seo-text-section
+            include ../components/seo-text
+        section.additional-info-section
+            include ../components/additional-info
+
+block footer
+    include ../components/footer

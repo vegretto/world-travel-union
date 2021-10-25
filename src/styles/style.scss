@@ -1,0 +1,55 @@
+//fancybox-fix: Позволяет импортировать jquery.fancybox.min.css напрямую в scss без ошибок при сборке.
+@import "helpers/fancybox-fix";
+
+//libs
+@import "libs/normalize";
+@import "libs/slick";
+@import "libs/jquery.fancybox.min";
+//@import "libs/easy-autocomplete.min";
+@import "libs/datepicker.min";
+
+//helpers
+@import "helpers/mixins";
+
+// base
+@import "base/variables";
+@import "base/fonts";
+@import "base/general";
+@import "base/common";
+
+// components
+@import "components/header";
+@import "components/nav-menu";
+@import "components/footer";
+@import "components/forms";
+@import "components/tours-banners";
+@import "components/promo";
+@import "components/map-section";
+@import "components/about-main";
+@import "components/about-advantages";
+@import "components/team";
+@import "components/testimonials";
+@import "components/license";
+@import "components/tours-filter";
+@import "components/filter-results";
+@import "components/tours";
+@import "components/banner-fw";
+@import "components/seo-text";
+@import "components/additional-info";
+@import "components/tour-top";
+@import "components/tour-description";
+@import "components/tour-highlights";
+@import "components/tour-program";
+@import "components/sidebar";
+@import "components/book-tour";
+@import "components/advantages-fw";
+@import "components/add-testimonial";
+@import "components/craft-examples";
+@import "components/price-waranty";
+@import "components/404";
+@import "components/contacts";
+@import "modals/modal";
+
+// pages
+@import "pages/index";
+@import "pages/tours-selections";

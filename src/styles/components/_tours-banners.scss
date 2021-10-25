@@ -1,0 +1,111 @@
+.tours-banners {
+  &__items {
+    display: grid;
+    grid-template-rows: 283px 283px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 991px) {
+      grid-template-rows: 350px 270px 270px;
+      grid-template-columns: 420px;
+      justify-content: center;
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 340px;
+    }
+  }
+  &__item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: $white;
+    &:hover {
+      .bg-wrapper {
+        filter: brightness(1.1);
+        transition: .2s ease-in-out;
+      }
+    }
+    &:before {
+      @include pseudo(100%, 100%);
+      background-color: $black;
+      opacity: .2;
+      left: 0;
+      top: 0;
+    }
+    .bg-wrapper {
+      transition: .2s ease-in-out;
+    }
+    &--lg {
+      grid-row: 1 / 3;
+      padding: 40px;
+      @media (max-width: 991px) {
+        grid-row: auto;
+        padding: 25px 25px 80px;
+      }
+    }
+    &--sm {
+      padding: 30px;
+      @media (max-width: 991px) {
+        grid-row: auto;
+        padding: 20px 20px 25px;
+      }
+      .tours__item-title {
+        @media (max-width: 991px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  &__item-title {
+    font-family: 'Gilroy', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 25px;
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  &__item-text {
+    font-family: 'Gilroy', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: $orange;
+    margin-bottom: 20px;
+    @media (max-width: 767px) {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+  }
+  &__item-btn {
+    font-family: 'Gilroy', serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    padding: 12px 22px;
+    background: linear-gradient(290.75deg, #11998E 26.17%, #38EF7D 102.82%, #38EF7D 102.82%, #38EF7D 102.82%);
+    border-radius: 50px;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>World Travel Union</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles/style.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__announce js-closable">
+				<div class="close-cross js-close">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="header__announce-text">Дарим еще больше отдыха: выходные на Кавказе или неделя в апартаментах в Турции в подарок</div><a class="header__announce-link" href="#">Подробнее</a>
+			</div>
+			<div class="header__top">
+				<div class="header__container container">
+					<nav class="small-nav-menu"><a class="small-nav-menu__item" href="#">WORLD TRAVEL UNION</a><a class="small-nav-menu__item" href="#">Отзывы <span class="small-nav-menu__num">(17)</span></a><a class="small-nav-menu__item" href="#">Гарантия низкой цены</a><a class="small-nav-menu__item" href="#">Скидки и подарки</a><a class="small-nav-menu__item" href="#">Подборки туров</a><a class="small-nav-menu__item" href="#">Контакты</a></nav>
+				</div>
+			</div>
+			<div class="header__middle">
+				<div class="header__container container">
+					<div class="header__middle-inner"><a class="header__logo-box" href="/">
+							<div class="header__logo"><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 297 29&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;297&quot; height=&quot;29&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/svg/logo.svg" alt="image" width="297" height="29"/>
+							</div>
+							<div class="header__descriptor"><b>Более 2000 маршрутов и&nbsp;направлений<span class="mob-hide">: </span></b><span class="mob-hide">от отдыха на море до&nbsp;восхождения на Килиманджаро и экспедиций в поиске китов</span></div></a>
+						<div class="header__advantages"><a class="header__advantage-item" href="#">
+								<div class="header__advantage-icon">
+									<svg class="icon icon-hot-sale">
+										<use xlink:href="img/svg/sprite.svg#hot-sale"></use>
+									</svg>
+								</div>
+								<div class="header__advantage-text">Дешевле, чем у&nbsp;туроператоров</div></a><a class="header__advantage-item" href="#">
+								<div class="header__advantage-icon">
+									<svg class="icon icon-open-box">
+										<use xlink:href="img/svg/sprite.svg#open-box"></use>
+									</svg>
+								</div>
+								<div class="header__advantage-text">Дарим скидки и&nbsp;подарки</div></a></div>
+						<div class="phones">
+							<div class="phones__phone">
+								<svg class="icon icon-phone">
+									<use xlink:href="img/svg/sprite.svg#phone"></use>
+								</svg><a href="tel:+74959842944">+7 (495) 984-29-44</a>
+							</div>
+							<div class="phones__phone">
+								<svg class="icon icon-whatsapp">
+									<use xlink:href="img/svg/sprite.svg#whatsapp"></use>
+								</svg><a href="https://wa.me/79687391579">+7 (968) 739-15-79</a>
+							</div>
+						</div>
+						<button class="header__btn-callback common-btn common-btn--orange js-open-modal" data-modal="#modal-callback">Перезвоните мне</button>
+					</div>
+				</div>
+			</div>
+			<div class="header__mobile-bottom">
+				<div class="mobile-menu-toggle js-open-mobile-menu">
+					<svg class="icon icon-menu">
+						<use xlink:href="img/svg/sprite.svg#menu"></use>
+					</svg>
+				</div>
+				<div class="mobile-menu"></div>
+			</div>
+			<div class="colored-hr"></div>
+			<div class="header__container container">
+				<div class="header__bottom">
+					<nav class="nav-menu"><a class="nav-menu__item" href="#">Страны и отели</a><a class="nav-menu__item" href="#">
+							<svg class="icon icon-fire">
+								<use xlink:href="img/svg/sprite.svg#fire"></use>
+							</svg>Горящие туры</a><a class="nav-menu__item" href="#">Активные туры</a><a class="nav-menu__item" href="#">Туры по России</a><a class="nav-menu__item" href="#">Отель + перелет</a><a class="nav-menu__item" href="#">Крафтовые туры</a></nav>
+				</div>
+			</div>
+			<div class="colored-hr"></div>
+		</header>
+		<main class="page-wrapper page-wrapper--tours-group">
+			<div class="blue-bg">
+				<div class="container">
+					<div class="breadcrumbs"><a class="breadcrumbs__item" href="#">Хлебные крошки</a><a class="breadcrumbs__item" href="#">Хлебные крошки</a>
+						<div class="breadcrumbs__item">Хлебные крошки</div>
+					</div>
+					<h1 class="h1-common">Туры на Килиманджаро с русскоязычным гидом</h1>
+					<form>
+						<div class="tours-filter js-tabs">
+							<div class="tours-filter__controls">
+								<div class="tours-filter__control active js-tabs-control" data-tab="#by-activity">Туры по виду активности</div>
+								<div class="tours-filter__control js-tabs-control" data-tab="#by-regions">Туры по регионам и странам</div>
+								<div class="tours-filter__control js-tabs-control" data-tab="#by-seasons">По сезону</div>
+								<div class="tours-filter__mobile-controls">
+									<div class="form-group form-group--select">
+										<div class="custom-select js-custom-select">
+											<div class="custom-select__value js-open-popup">Туры по виду активности</div>
+											<div class="custom-select-options js-popup">
+												<div class="custom-select-option js-tabs-control" data-tab="#by-activity">Туры по виду активности</div>
+												<div class="custom-select-option js-tabs-control" data-tab="#by-regions">Туры по регионам и странам</div>
+												<div class="custom-select-option js-tabs-control" data-tab="#by-seasons">По сезону</div>
+											</div>
+											<select id="filter-controls">
+												<option>Туры по виду активности</option>
+												<option>Туры по регионам и странам</option>
+												<option>По сезону</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tours-filter__tabs">
+								<div class="tours-filter__tab js-tab active" id="by-activity">
+									<div class="tours-filter__items">
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[0]">Восхождения</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[0]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[1]">Покорение Килиманджаро</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[1]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[2]">Сафари</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[2]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[3]">Экспедиции</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[3]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[4]">Треккинги</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[4]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[5]">Экскурсионные туры</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[5]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[6]">Горнолыжные курорты</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[6]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[7]">Туры с детьми</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[7]"/>
+										</div>
+									</div>
+								</div>
+								<div class="tours-filter__tab js-tab" id="by-regions">
+									<div class="tours-filter__items">
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[01]">Африка</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[01]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[11]">Северная Америка</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[11]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[21]">Латинская Америка</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[21]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[31]">Россия</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[31]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[41]">Европа</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[41]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[51]">Азия</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[51]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[61]">Арктика / Антарктика</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[61]"/>
+										</div>
+									</div>
+									<div class="tours-filter__items tours-filter__items--lg">
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[02]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region1.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">Эфиопия</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[02]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[12]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region2.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region2.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">Марокко</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[12]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[22]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region3.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region3.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">Намибия</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[22]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[32]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region4.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region4.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">Карокко</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[32]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[42]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region5.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region5.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">Варокко</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[42]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[52]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region6.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region6.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">Мамибия</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[52]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[62]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region7.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region7.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">ЮАР</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[62]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[72]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region8.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region8.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">Камибия</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[72]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[82]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region9.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region9.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">КАР</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[82]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-lg js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[92]">
+												<div class="filters-checkbox-label__img">
+													<picture>
+														<source data-srcset="img/region10.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 120 120&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;120&quot; height=&quot;120&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/region10.png" alt="image" width="120" height="120"/>
+													</picture>
+												</div>
+												<div class="filters-checkbox-label__country-name">ВАР</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[92]">
+										</div>
+									</div>
+								</div>
+								<div class="tours-filter__tab js-tab" id="by-seasons">
+									<div class="tours-filter__items">
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-md js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[61]">
+												<div class="filters-checkbox-label__icon">
+													<svg class="icon icon-summer">
+														<use xlink:href="img/svg/sprite.svg#summer"></use>
+													</svg>
+												</div>
+												<div class="filters-checkbox-label__season-name">Лето</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[61]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-md js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[62]">
+												<div class="filters-checkbox-label__icon">
+													<svg class="icon icon-fall">
+														<use xlink:href="img/svg/sprite.svg#fall"></use>
+													</svg>
+												</div>
+												<div class="filters-checkbox-label__season-name">Осень</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[62]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-md js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[63]">
+												<div class="filters-checkbox-label__icon">
+													<svg class="icon icon-winter">
+														<use xlink:href="img/svg/sprite.svg#winter"></use>
+													</svg>
+												</div>
+												<div class="filters-checkbox-label__season-name">Зима</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[63]">
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox-md js-filter-checkbox">
+											<label class="filters-checkbox-label" for="filters-item[64]">
+												<div class="filters-checkbox-label__icon">
+													<svg class="icon icon-spring">
+														<use xlink:href="img/svg/sprite.svg#spring"></use>
+													</svg>
+												</div>
+												<div class="filters-checkbox-label__season-name">Весна</div>
+											</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[64]">
+										</div>
+									</div>
+									<div class="tours-filter__items">
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[03]">Январь</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[03]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[13]">Февраль</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[13]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[23]">Март</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[23]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[33]">Апрель</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[33]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[43]">Май</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[43]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[53]">Июнь</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[53]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[63]">Июль</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[63]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[73]">Август</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[73]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[83]">Сентябрь</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[83]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[93]">Октябрь</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[93]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[103]">Ноябрь</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[103]"/>
+										</div>
+										<div class="form-group form-group--checkbox form-group--filters-checkbox js-filter-checkbox">
+											<div class="custom-cb-badge js-custom-cb"></div>
+											<label class="filters-checkbox-label" for="filters-item[113]">Декабрь</label>
+											<input class="filters-checkbox" type="checkbox" id="filters-item[113]"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear-filters">
+							<button class="clear-filters__btn js-clear-filters">Сбросить фильтры</button>
+						</div>
+					</form>
+					<div class="filter-results">
+						<div class="filter-results__top">
+							<div class="filter-results__found">Найдено туров: 31</div>
+							<div class="filter-results__sorting">
+								<div class="filter-results__sorting-text">Сортировать по:</div>
+								<div class="filter-results__sorting-controls">
+									<div class="filter-results__sorting-control js-toggle active">Популярности</div>
+									<div class="filter-results__sorting-control js-toggle">Цене</div>
+									<div class="filter-results__sorting-control js-toggle">Количеству дней</div>
+									<div class="filter-results__sorting-control js-toggle">Ближайшей дате</div>
+									<div class="filter-results__mobile-controls">
+										<div class="form-group form-group--select">
+											<div class="custom-select js-custom-select">
+												<div class="custom-select__value js-open-popup">Популярности</div>
+												<div class="custom-select-options js-popup">
+													<div class="custom-select-option">Популярности</div>
+													<div class="custom-select-option">Цене</div>
+													<div class="custom-select-option">Количеству дней</div>
+													<div class="custom-select-option">Ближайшей дате</div>
+												</div>
+												<select id="filter-results-controls">
+													<option>Популярности</option>
+													<option>Цене</option>
+													<option>Количеству дней</option>
+													<option>Ближайшей дате</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter-results__sorting-view-type">
+									<div class="filter-results__sorting-view-type-item filter-results__sorting-view-type-item--lg-items js-toggle active">
+										<svg class="icon icon-menu2">
+											<use xlink:href="img/svg/sprite.svg#menu2"></use>
+										</svg>
+									</div>
+									<div class="filter-results__sorting-view-type-item filter-results__sorting-view-type-item--sm-items js-toggle">
+										<svg class="icon icon-menu1">
+											<use xlink:href="img/svg/sprite.svg#menu1"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="tours-section pt-0">
+					<div class="tours">
+						<div class="tours__container container">
+							<div class="tours-wrapper tours-wrapper--sm">
+								<div class="tours-item tours-item--sm">
+									<div class="tours-item__img">
+										<div class="tours-item__closest-dates"><span>Ближайшие даты 23.05.2021</span><a href="#">Смотреть все</a></div>
+										<picture>
+											<source data-srcset="img/tour-sm1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 570 339&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;570&quot; height=&quot;339&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/tour-sm1.png" alt="image" width="570" height="339"/>
+										</picture>
+									</div>
+									<div class="tours-item__content">
+										<div class="tours-item__tags">
+											<div class="tours-item__tag tours-item__tag--purple">Русский гид</div>
+											<div class="tours-item__tag tours-item__tag--orange">Только у нас!</div>
+											<div class="tours-item__tag tours-item__tag--blue">Скоро</div>
+										</div>
+										<div class="tours-item__region">Африка</div><a class="tours-item__name" href="#">Восхождение на Килиманджаро. Ронгай + сафари</a>
+										<div class="tours-item__description">Восхождение на Килиманджаро с местным гидом и 2 дня сафари после горы</div>
+										<div class="tours-item__inner">
+											<div class="tours-item__inner-item tours-item__inner-item--duration">5&nbsp;дней / 4&nbsp;ночи</div>
+											<div class="tours-item__inner-item tours-item__inner-item--price"><span class="tours-item__price-a-day">10 316 ₽/день</span><span class="tours-item__price-total">72 215 ₽ (950 $)</span>
+												<div class="tours-item__label">
+													<div class="tours-item__label-icon">
+														<svg class="icon icon-sale">
+															<use xlink:href="img/svg/sprite.svg#sale"></use>
+														</svg>
+													</div><span>Лучшая цена</span>
+												</div>
+											</div>
+										</div>
+										<div class="btns-wrapper"><a class="common-btn common-btn--lg common-btn--green" href="#">Программа и даты тура</a></div>
+										<div class="tours-item__hr"></div>
+										<div class="tours-item__hashtags"><a href="#">#восхождение</a><a href="#">#треккинг</a></div>
+									</div>
+								</div>
+								<div class="tours-item tours-item--sm">
+									<div class="tours-item__img">
+										<div class="tours-item__closest-dates"><span>Ближайшие даты 23.05.2021</span><a href="#">Смотреть все</a></div>
+										<picture>
+											<source data-srcset="img/tour-sm2.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 570 339&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;570&quot; height=&quot;339&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/tour-sm2.png" alt="image" width="570" height="339"/>
+										</picture>
+									</div>
+									<div class="tours-item__content">
+										<div class="tours-item__tags">
+											<div class="tours-item__tag tours-item__tag--purple">Русский гид</div>
+											<div class="tours-item__tag tours-item__tag--orange">Только у нас!</div>
+											<div class="tours-item__tag tours-item__tag--blue">Скоро</div>
+										</div>
+										<div class="tours-item__region">Африка</div><a class="tours-item__name" href="#">Восхождение на Килиманджаро. Ронгай + сафари</a>
+										<div class="tours-item__description">Восхождение на Килиманджаро с местным гидом и 2 дня сафари после горы</div>
+										<div class="tours-item__inner">
+											<div class="tours-item__inner-item tours-item__inner-item--duration">5&nbsp;дней / 4&nbsp;ночи</div>
+											<div class="tours-item__inner-item tours-item__inner-item--price"><span class="tours-item__price-a-day">10 316 ₽/день</span><span class="tours-item__price-total">72 215 ₽ (950 $)</span>
+												<div class="tours-item__label">
+													<div class="tours-item__label-icon">
+														<svg class="icon icon-sale">
+															<use xlink:href="img/svg/sprite.svg#sale"></use>
+														</svg>
+													</div><span>Лучшая цена</span>
+												</div>
+											</div>
+										</div>
+										<div class="btns-wrapper"><a class="common-btn common-btn--lg common-btn--green" href="#">Программа и даты тура</a></div>
+										<div class="tours-item__hr"></div>
+										<div class="tours-item__hashtags"><a href="#">#восхождение</a><a href="#">#треккинг</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btns-wrapper btns-wrapper--more">
+						<button class="common-btn common-btn--lg common-btn--orange">Показать ещё</button>
+					</div>
+				</section>
+				<section class="tours-section tablet-hide">
+					<div class="tours">
+						<div class="tours__container container">
+							<div class="tours-wrapper tours-wrapper--lg">
+								<div class="tours-item tours-item--lg">
+									<div class="tours-item__left">
+										<div class="tours-item__tags">
+											<div class="tours-item__tag tours-item__tag--purple">Русский гид</div>
+											<div class="tours-item__tag tours-item__tag--orange">Только у нас!</div>
+											<div class="tours-item__tag tours-item__tag--blue">Скоро</div>
+										</div>
+										<div class="tours-item__region">Албания</div><a class="tours-item__name" href="#">Албания – море, история, природа</a>
+										<div class="tours-item__description">Пляжи Ионического и Адриатического морей, интереснейшие памятники архитектуры и истории, неповторимое сочетание природы моря и гор.</div><a class="tours-item__btn tours-item__btn--program" href="#">Программа тура</a>
+										<div class="tours-item__hashtags"><a href="#">#восхождение</a><a href="#">#треккинг</a></div>
+									</div>
+									<div class="tours-item__img">
+										<div class="tours-item__closest-dates"><span>Ближайшие даты 23.05.2021</span><a href="#">Смотреть все</a></div>
+										<picture>
+											<source data-srcset="img/tour-lg1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 470 412&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;470&quot; height=&quot;412&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/tour-lg1.png" alt="image" width="470" height="412"/>
+										</picture>
+									</div>
+									<div class="tours-item__right">
+										<div class="tours-item__inner">
+											<div class="tours-item__inner-item tours-item__inner-item--duration">5&nbsp;дней / 4&nbsp;ночи</div>
+											<div class="tours-item__inner-item tours-item__inner-item--price"><span class="tours-item__price-a-day">10 316 ₽/день</span><span class="tours-item__price-total">72 215 ₽ (950 $)</span>
+												<div class="tours-item__label">
+													<div class="tours-item__label-icon">
+														<svg class="icon icon-sale">
+															<use xlink:href="img/svg/sprite.svg#sale"></use>
+														</svg>
+													</div><span>Лучшая цена</span>
+												</div>
+											</div>
+										</div>
+										<div class="tours-item__btns-wrapper btns-wrapper"><a class="tours-item__btn tours-item__btn--dates" href="#">Смотреть все даты</a>
+											<button class="tours-item__btn tours-item__btn--request js-open-modal" data-modal="#modal-book">Оставить заявку на тур</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<section>
+				<div class="container">
+					<div class="typography">
+						<div class="typography-container">
+							<h2 class="h2-common txt-left">Покоряйте Килиманджаро с World Travel Union</h2>
+							<p>Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.</p>
+							<p>Таким образом консультация с широким активом требуют определения и уточнения модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Таким образом сложившаяся структура организации в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+						</div>
+						<div class="typography__img">
+							<picture>
+								<source data-srcset="img/tours-group1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 1170 725&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;1170&quot; height=&quot;725&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/tours-group1.png" alt="image" width="1170" height="725"/>
+							</picture>
+						</div>
+						<div class="typography-container">
+							<h2 class="h2-common txt-left">Заголовок 2</h2>
+							<p>Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.</p>
+							<p>Таким образом консультация с широким активом требуют определения и уточнения модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Таким образом сложившаяся структура организации в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+						</div>
+						<div class="typography__img"><a class="fancy-video" data-fancybox="tg-gal1" data-src="https://www.youtube.com/watch?v=S782jv9z5ck">
+								<div class="play">
+									<svg class="icon icon-play">
+										<use xlink:href="img/svg/sprite.svg#play"></use>
+									</svg>
+								</div>
+								<picture>
+									<source data-srcset="img/tours-group2.webp" type="image/webp"/><img class="lazyload" data-src="img/https://www.youtube.com/watch?v=S782jv9z5ck.png" alt="image" width="1170" height="725"/>
+								</picture></a>
+						</div>
+						<div class="typography-container">
+							<h2 class="h2-common txt-left">Заголовок 3</h2>
+							<p>Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.</p>
+							<p>Таким образом консультация с широким активом требуют определения и уточнения модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что начало повседневной работы по формированию позиции способствует подготовки и реализации новых предложений. Таким образом сложившаяся структура организации в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+							<blockquote>Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="banner-fw-section">
+				<div class="banner-fw">
+					<div class="banner-fw__container container">
+						<div class="banner-fw__inner">
+							<div class="banner-fw__bg-img">
+								<picture>
+									<source data-srcset="img/banner-fw-bg1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 175&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;175&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/banner-fw-bg1.png" alt="image" width="175" height="175"/>
+								</picture>
+							</div>
+							<div class="banner-fw__left">
+								<div class="banner-fw__title">Подберем тур<br>под ваш бюджет</div>
+								<div class="banner-fw__subtitle">Предложим от трех вариантов отдыха под бюджет вашего путешествия.</div>
+							</div>
+							<div class="banner-fw__right">
+								<div class="banner-fw__text">Не нужно ждать акции и тратить время на поиск. Просто оставьте заявку или позвоните нам:</div>
+								<div class="banner-fw__inner-box">
+									<div class="phones">
+										<div class="phones__phone">
+											<svg class="icon icon-phone">
+												<use xlink:href="img/svg/sprite.svg#phone"></use>
+											</svg><a href="tel:+74959842944">+7 (495) 984-29-44</a>
+										</div>
+										<div class="phones__phone">
+											<svg class="icon icon-whatsapp">
+												<use xlink:href="img/svg/sprite.svg#whatsapp"></use>
+											</svg><a href="https://wa.me/79687391579">+7 (968) 739-15-79</a>
+										</div>
+									</div>
+									<button class="common-btn common-btn--orange js-open-modal" data-modal="#modal-callback">Обратный звонок</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="promo-section white-bg">
+				<div class="promo">
+					<div class="promo__container container">
+						<h2 class="h2-common promo__title"><span class="txt-orange">Акции и скидки на путешествия</span><br> от WORLD TRAVEL UNION</h2>
+						<div class="promo__items"><a class="promo__item" href="#">
+								<div class="bg-wrapper">
+									<picture>
+										<source data-srcset="img/promo1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 370 434&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;370&quot; height=&quot;434&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/promo1.png" alt="image" width="370" height="434"/>
+									</picture>
+								</div>
+								<div class="promo__item-content">
+									<div class="promo__item-title">Неделя в уютной студии в центре&nbsp;Турции бесплатно</div>
+									<div class="promo__item-btn common-btn common-btn--orange">Подробнее</div>
+								</div></a><a class="promo__item" href="#">
+								<div class="bg-wrapper">
+									<picture>
+										<source data-srcset="img/promo3.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 370 434&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;370&quot; height=&quot;434&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/promo3.png" alt="image" width="370" height="434"/>
+									</picture>
+								</div>
+								<div class="promo__item-content">
+									<div class="promo__item-title">В подарок Выходные&nbsp;на&nbsp;Кавказе</div>
+									<div class="promo__item-text">При покупке любых туров на 300&nbsp;000 рублей</div>
+									<div class="promo__item-btn common-btn common-btn--orange">Подробнее</div>
+								</div></a><a class="promo__item" href="#">
+								<div class="bg-wrapper">
+									<picture>
+										<source data-srcset="img/promo2.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 370 434&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;370&quot; height=&quot;434&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/promo2.png" alt="image" width="370" height="434"/>
+									</picture>
+								</div>
+								<div class="promo__item-content">
+									<div class="promo__item-title">В подарок Выходные&nbsp;на&nbsp;Кавказе</div>
+									<div class="promo__item-text">При покупке любых туров на 300&nbsp;000 рублей</div>
+									<div class="promo__item-btn common-btn common-btn--orange">Подробнее</div>
+								</div></a></div>
+					</div>
+				</div>
+			</section>
+			<section class="testimonials-section">
+				<div class="testimonials">
+					<div class="testimonials__container container">
+						<h2 class="h2-common">Отзывы о путешествиях<br><span class="txt-orange">с World Travel Union</span></h2>
+						<div class="testimonials__items">
+							<div class="testimonials__item">
+								<div class="testimonials__name">Константин Константинопольский</div>
+								<div class="testimonials__date">12.05.2021</div>
+								<div class="testimonials__tags">Тур «Название»  /  7 ночей  /  отель «Название»</div>
+								<div class="testimonials__text">Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.</div>
+								<div class="testimonials__images">
+									<div class="testimonials__image"><a href="img/testim1.png" data-fancybox="testimonials1">
+											<picture>
+												<source data-srcset="img/testim1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;130&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/testim1.png" alt="image" width="175" height="130"/>
+											</picture></a>
+									</div>
+									<div class="testimonials__image"><a href="img/testim2.png" data-fancybox="testimonials1">
+											<picture>
+												<source data-srcset="img/testim2.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;130&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/testim2.png" alt="image" width="175" height="130"/>
+											</picture></a>
+									</div>
+									<div class="testimonials__image"><a href="img/testim3.png" data-fancybox="testimonials1">
+											<picture>
+												<source data-srcset="img/testim3.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;130&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/testim3.png" alt="image" width="175" height="130"/>
+											</picture></a>
+									</div>
+									<div class="testimonials__image"><a href="img/testim4.png" data-fancybox="testimonials1">
+											<picture>
+												<source data-srcset="img/testim4.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;130&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/testim4.png" alt="image" width="175" height="130"/>
+											</picture></a>
+									</div>
+									<div class="testimonials__image"><a href="img/testim5.png" data-fancybox="testimonials1">
+											<picture>
+												<source data-srcset="img/testim5.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;130&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/testim5.png" alt="image" width="175" height="130"/>
+											</picture></a>
+									</div><a class="testimonials__image testimonials__image--more" href="img/testim1.png" data-fancybox="testimonials1">
+										<div class="testimonials__more-block">+6 фото</div></a>
+									<div class="testimonials__image testimonials__image--hidden"><a href="img/testim2.png" data-fancybox="testimonials1">
+											<picture>
+												<source data-srcset="img/testim2.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;130&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/testim2.png" alt="image" width="175" height="130"/>
+											</picture></a>
+									</div>
+									<div class="testimonials__image testimonials__image--hidden"><a href="img/testim3.png" data-fancybox="testimonials1">
+											<picture>
+												<source data-srcset="img/testim3.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;130&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/testim3.png" alt="image" width="175" height="130"/>
+											</picture></a>
+									</div>
+									<div class="testimonials__image testimonials__image--hidden"><a href="img/testim4.png" data-fancybox="testimonials1">
+											<picture>
+												<source data-srcset="img/testim4.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 175 130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;175&quot; height=&quot;130&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/testim4.png" alt="image" width="175" height="130"/>
+											</picture></a>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__item">
+								<div class="testimonials__name">Константин Константинопольский</div>
+								<div class="testimonials__date">12.05.2021</div>
+								<div class="testimonials__tags">Тур «Название»  /  7 ночей  /  отель «Название»</div>
+								<div class="testimonials__text">Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.</div>
+							</div>
+						</div>
+						<div class="btns-wrapper"><a class="btns-wrapper__btn common-btn common-btn--lg common-btn--orange" href="#">Все отзывы</a></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="module-wrapper">
+				<div class="module-wrapper__inner"><div class="tv-search-form tv-moduleid-1368055"></div></div>
+			</div>
+			<div class="footer__top">
+				<div class="footer__container container">
+					<div class="footer__inner">
+						<div class="footer__logo"><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 297 29&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;297&quot; height=&quot;29&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/svg/logo.svg" alt="image" width="297" height="29"/>
+						</div>
+						<div class="footer__phones">
+							<div class="footer__phone">
+								<svg class="icon icon-phone">
+									<use xlink:href="img/svg/sprite.svg#phone"></use>
+								</svg><a href="tel:+74959842944">+7 (495) 984-29-44</a>
+							</div>
+							<div class="footer__phone">
+								<svg class="icon icon-whatsapp">
+									<use xlink:href="img/svg/sprite.svg#whatsapp"></use>
+								</svg><a href="https://wa.me/79687391579">+7 (968) 739-15-79</a>
+							</div>
+						</div>
+						<button class="common-btn common-btn--orange js-open-modal" data-modal="#modal-book">Найти тур мечты</button>
+					</div>
+					<nav class="nav-menu nav-menu--light"><a class="nav-menu__item" href="#">Страны и отели</a><a class="nav-menu__item" href="#">
+							<svg class="icon icon-fire">
+								<use xlink:href="img/svg/sprite.svg#fire"></use>
+							</svg>Горящие туры</a><a class="nav-menu__item" href="#">Активные туры</a><a class="nav-menu__item" href="#">Туры по России</a><a class="nav-menu__item" href="#">Отель + перелет</a><a class="nav-menu__item" href="#">Крафтовые туры</a></nav><div class="tv-min-price tv-moduleid-9944896"></div>
+					<nav class="small-nav-menu"><a class="small-nav-menu__item" href="#">WORLD TRAVEL UNION</a><a class="small-nav-menu__item" href="#">Отзывы <span class="small-nav-menu__-num">(17)</span></a><a class="small-nav-menu__item" href="#">Гарантия низкой цены</a><a class="small-nav-menu__item" href="#">Скидки и подарки</a><a class="small-nav-menu__item" href="#">Подборки туров</a><a class="small-nav-menu__item" href="#">Контакты</a></nav>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container container">
+					<div class="footer__bottom-inner">
+						<div class="footer__title-wrapper">
+							<div class="footer__title">Турагентство World&nbsp;Travel&nbsp;Union</div>
+							<div class="footer__subtitle">Официальный сайт</div>
+						</div>
+						<div class="footer__descriptor">Более 10 000 туров:<br> от крафтовых туров до популярных направлений крупнейших туроператоров</div>
+						<div class="footer__address">Московская область<br>г. Одинцово, ул. Советская, д. 9, офис 1</div>
+						<div class="socials"><a class="socials__social" href="#">
+								<svg class="icon icon-insta">
+									<use xlink:href="img/svg/sprite.svg#insta"></use>
+								</svg></a><a class="socials__social" href="#">
+								<svg class="icon icon-facebook">
+									<use xlink:href="img/svg/sprite.svg#facebook"></use>
+								</svg></a></div>
+						<div class="footer__policies"><a class="footer__policy" href="#">Политика конфиденциальности</a><a class="footer__policy" href="#">Пользовательское соглашение</a></div>
+					</div>
+					<div class="footer__partners">
+						<div class="footer__partners-title">Официальный партнер крупнейших туроператоров</div>
+						<div class="footer__partners-items">
+							<div class="footer__partners-item">
+								<picture>
+									<source data-srcset="img/partners.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 887 67&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;887&quot; height=&quot;67&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/partners.png" alt="image" width="887" height="67"/>
+								</picture>
+							</div>
+							<div class="footer__partners-item footer__partners-item--more">и еще 12 туроператоров</div>
+						</div>
+					</div>
+					<div class="footer__credits">
+						<div class="footer__credit footer__credit--copywrite">© Турагентство World Travel Union, 2021</div>
+						<div class="footer__credit footer__credit--developers">Разработка сайта — <a href="https://webelement.ru/">WEBELEMENT</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal modal--book" id="modal-book">
+			<div class="modal__inner">
+				<div class="modal__close-cross js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="book-tour">
+					<h2 class="h2-common">Узнать подробности<br>и забронировать тур</h2>
+					<form class="book-tour__common-form common-form">
+						<div class="book-tour__inner">
+							<div class="book-tour__left">
+								<div class="form-group">
+									<label class="label-common" for="tp-name">Имя*</label>
+									<input class="input-common" type="text" id="tp-name" required="required" placeholder="Имя"/>
+									<div class="error-message">Это поле обязательно для заполнения</div>
+								</div>
+								<div class="form-group">
+									<label class="label-common" for="tp-tel">Телефон*</label>
+									<input class="input-common" type="tel" id="tp-tel" required="required" placeholder="+7 (___) ___–__–__"/>
+									<div class="error-message">Это поле обязательно для заполнения</div>
+								</div>
+								<div class="fg-wrapper">
+									<div class="form-group">
+										<label class="label-common" for="tp-email">E-mail</label>
+										<input class="input-common" type="email" id="tp-email" placeholder="example@pochta.ru"/>
+										<div class="error-message">Это поле обязательно для заполнения</div>
+									</div>
+									<div class="form-group">
+										<label class="label-common" for="tp-num">Количество человек</label>
+										<input class="input-common input-common-w-icon" type="number" id="tp-num" required="required" placeholder="1"/>
+										<div class="error-message">Это поле обязательно для заполнения</div>
+									</div>
+								</div>
+							</div>
+							<div class="book-tour__right">
+								<div class="form-group form-group--datepicker">
+									<label class="label-common" for="tp-date">Даты</label>
+									<div class="datepicker-wrapper">
+										<input class="input-common" type="text" id="tp-date" readonly="readonly" required="required" placeholder="Укажите даты или месяц"/>
+									</div>
+									<div class="error-message">Это поле обязательно для заполнения</div>
+								</div>
+								<div class="form-group form-group--textarea">
+									<label class="label-common" for="tp-comment">Ваши пожелания или вопрос</label>
+									<textarea class="input-common" id="tp-comment" reqiured="reqiured" placeholder="Здесь вы можете указать желаемый тип проживания, питания, развлечений или задать любой другой вопрос"></textarea>
+									<div class="error-message">Это поле обязательно для заполнения</div>
+								</div>
+							</div>
+						</div>
+						<div class="btns-wrapper">
+							<button class="common-btn common-btn--lg common-btn--orange">Отправить</button>
+							<div class="form-group form-group--checkbox js-checkbox checked">
+								<div class="custom-cb-badge js-custom-cb checked"></div>
+								<label class="custom-checkbox__label" for="tp-allow">Согласие на обработку моих <a href="#">персональных данных</a></label>
+								<input class="custom-checkbox" type="checkbox" id="tp-allow" checked="checked" reqiured="reqiured"/>
+								<div class="error-message">Это поле обязательно для заполнения</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--callback" id="modal-callback">
+			<div class="modal__inner">
+				<div class="modal__close-cross js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<h2 class="h2-common">Обратный звонок</h2>
+				<form class="modal__inner__common-form common-form">
+					<div class="form-group">
+						<label class="label-common" for="tp-name">Имя*</label>
+						<input class="input-common" type="text" id="tp-name" required="required" placeholder="Имя"/>
+						<div class="error-message">Это поле обязательно для заполнения</div>
+					</div>
+					<div class="form-group">
+						<label class="label-common" for="tp-tel">Телефон*</label>
+						<input class="input-common" type="tel" id="tp-tel" required="required" placeholder="+7 (___) ___–__–__"/>
+						<div class="error-message">Это поле обязательно для заполнения</div>
+					</div>
+					<div class="btns-wrapper btns-wrapper--column">
+						<button class="common-btn common-btn--lg common-btn--orange">Отправить</button>
+						<div class="form-group form-group--checkbox js-checkbox checked">
+							<div class="custom-cb-badge js-custom-cb checked"></div>
+							<label class="custom-checkbox__label" for="tp-allow">Согласие на обработку моих <a href="#">персональных данных</a></label>
+							<input class="custom-checkbox" type="checkbox" id="tp-allow" checked="checked" reqiured="reqiured"/>
+							<div class="error-message">Это поле обязательно для заполнения</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal modal--success" id="modal-success">
+			<div class="modal__inner modal__inner--purple">
+				<div class="modal__close-cross js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__success-icon">
+					<svg class="icon icon-check">
+						<use xlink:href="img/svg/sprite.svg#check"></use>
+					</svg>
+				</div>
+				<h2 class="h2-common">Заявку получили!<br>Ваше путешествие в надежных руках.</h2>
+				<p>Все подготовим и перезвоним вам</p>
+			</div>
+		</div>
+		<div class="cookies-disclaimer show">
+			<div class="cookies-disclaimer__inner">
+				<picture>
+					<source data-srcset="img/hippo.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml,%3Csvg viewBox=&quot;0 0 100 71&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Crect width=&quot;100&quot; height=&quot;71&quot; fill=&quot;%23f1f1f1&quot;/%3E%3C/svg%3E" data-src="img/hippo.png" alt="image" width="100" height="71"/>
+				</picture>
+				<div class="cookies-disclaimer__text">Мы используем cookie-файлы, чтобы вам было удобнее пользоваться нашим сайтом.</div>
+				<div class="cookies-disclaimer__btn js-close-cookie">Хорошо</div>
+			</div>
+		</div>
+		<script src="scripts/vendor.min.js"></script>
+		<script src="scripts/main.min.js"></script>
+		<script src="//tourvisor.ru/module/init.js"></script>
+	</body>
+</html>

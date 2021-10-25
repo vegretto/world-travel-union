@@ -1,0 +1,41 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--hotel-and-flight
+        section
+            h2.h2-common Туры #[span.txt-orange «отель + перелёт»] со скидками
+            <div class="tv-image-slider tv-moduleid-995586"></div>
+        section
+            .container
+                h2.h2-common.txt-orange Действительно есть из чего выбрать
+                .sub-text
+                    ._underlined Самая большая база путешествий в любую точку мира<br>
+                    | от пляжного отдыха до полярных экспедиций и восхождения на Эверест
+        section
+            .container
+                <div class="tv-search-form tv-moduleid-199200"></div>
+        section.blue-bg
+            .container
+                h2.h2-common.-hot
+                    +icon('flame')
+                    | Горящие туры по всему миру
+                <div class="tv-hot-tours tv-moduleid-995584 mb-4"></div>
+                .btns-wrapper
+                    a(href="#").common-btn.common-btn--orange Показать все скидки
+        section.banner-fw-section
+            include ../components/banner-fw
+        section.blue-bg
+            .container
+                h2.h2-common Календарь
+                <div class="tv-calendar tv-moduleid-995582"></div>
+        section.advantages-fw-section
+            include ../components/advantages-fw
+        section.promo-section
+            include ../components/promo
+        section.additional-info-section
+            include ../components/additional-info
+block footer
+    include ../components/footer

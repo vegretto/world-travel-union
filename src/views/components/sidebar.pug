@@ -1,0 +1,27 @@
+aside.sidebar
+    nav.tour-nav
+        ._item.active.js-toggle.js-scroll-to(data-scroll="#program") Программа тура
+        ._item.js-toggle.js-scroll-to(data-scroll="#testimonials") Видео наших туристов
+        ._item.js-toggle.js-scroll-to(data-scroll="#price") Что входит в цену
+        ._item.js-toggle.js-scroll-to(data-scroll="#dates") Даты тура
+        ._item.js-toggle.js-scroll-to(data-scroll="#rooms") Проживание и питание
+        ._item.js-toggle.js-scroll-to(data-scroll="#misc") Дополнительно
+    ._info-block
+        ._subtitle Это крафтовый тур, поэтому вы можете:
+        .common-ul.-white
+            li Внести изменения в маршрут
+            li Выбрать любые даты
+            li Изменить тип проживания, убрать или добавить экскурсии и трансфер и т. д.
+        .btns-wrapper
+            button.common-btn.common-btn--orange.js-open-modal(data-modal="#modal-callback") Обсудить с менеджером
+            a(href="https://wa.me/79687391579").common-btn.common-btn--green Написать в WhatsApp
+    .phones
+        ._phone
+            +icon('phone')
+            a(href="tel:+74959842944") +7 (495) 984-29-44
+        ._phone
+            +icon('whatsapp')
+            a(href="https://wa.me/79687391579") +7 (968) 739-15-79
+    ._tags
+        a(href="#")._tag #восхождение
+        a(href="#")._tag #треккинг

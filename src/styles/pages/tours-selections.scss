@@ -1,0 +1,65 @@
+.tour-selection {
+  &__items {
+    height: 190px;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  &__items-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 870px;
+    width: 100%;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__col {
+    flex-basis: calc(100% / 3 - 40px);
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 767px) {
+      flex-basis: 100%
+    }
+  }
+  &__item {
+    color: #009EFD;
+    text-decoration: underline;
+    margin-bottom: 7px;
+  }
+}
+
+
+.popular-tour-selection {
+  &__inner {
+    border: 3px solid $orange;
+    padding: 40px;
+    border-radius: 15px;
+    @media (max-width: 767px) {
+      padding: 20px 10px;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__col {
+    flex-basis: calc(100% / 4 - 50px);
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 991px) {
+      flex-basis: calc(100% / 2 - 50px);
+    }
+    @media (max-width: 991px) {
+      flex-basis: 100%
+    }
+  }
+  &__item {
+    color: #009EFD;
+    text-decoration: underline;
+    margin-bottom: 7px;
+  }
+}

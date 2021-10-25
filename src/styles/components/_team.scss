@@ -1,0 +1,88 @@
+.team {
+  background-color: $light-blue;
+  padding: 50px 30px;
+  border-radius: 15px;
+  @media (max-width: 991px) {
+    padding: 35px 10px 65px;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+  }
+  &__boss {
+    border: 3px solid $orange;
+    border-radius: 15px;
+    padding: 35px 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 65px;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 15px 30px;
+    }
+    .team__photo {
+      margin-bottom: 0;
+      margin-right: 50px;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    .team__content {
+      max-width: 450px;
+    }
+  }
+  &__staff {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -30px -45px;
+    @media (max-width: 991px) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      margin: -30px -15px;
+    }
+  }
+  &__staff-item {
+    flex-basis: calc(100% / 3 - 90px);
+    display: flex;
+    flex-direction: column;
+    margin: 30px 45px;
+    @media (max-width: 991px) {
+      flex-basis: 330px;
+      flex-shrink: 0;
+      margin: 0 45px;
+    }
+    @media (max-width: 767px) {
+      margin: 0 15px;
+    }
+  }
+
+  &__photo {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    @media (max-width: 767px) {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__name {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: $purple;
+    margin-bottom: 15px;
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    color: $gray;
+  }
+}

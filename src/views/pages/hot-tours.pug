@@ -1,0 +1,25 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--hot-tours
+        .container
+            .breadcrumbs
+                a(href="#").breadcrumbs__item Хлебные крошки
+                a(href="#").breadcrumbs__item Хлебные крошки
+                .breadcrumbs__item Хлебные крошки
+        section
+            .container
+                h2.h2-common.-hot
+                    +icon('flame')
+                    | Туры с горячими скидками
+                <div class="tv-hot-tours tv-moduleid-995869"></div>
+        section.banner-fw-section
+            include ../components/banner-fw
+        section.promo-section
+            include ../components/promo
+
+block footer
+    include ../components/footer

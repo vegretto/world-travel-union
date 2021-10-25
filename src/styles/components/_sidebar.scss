@@ -1,0 +1,112 @@
+.sidebar {
+  padding: 35px 20px;
+  border-radius: 15px;
+  background: $purple-gradient;
+  position: sticky;
+  top: 30px;
+  @media (max-width: 1199px) {
+    padding: 15px 10px;
+    position: static;
+  }
+  &__info-block {
+    margin-bottom: 25px;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &__subtitle {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  .common-ul {
+    max-width: 290px;
+    margin-bottom: 25px;
+    li {
+      font-size: 15px;
+      line-height: 19px;
+    }
+  }
+  .btns-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .common-btn {
+    margin-bottom: 10px;
+    margin-right: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .phones {
+    margin-bottom: 20px;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+    a {
+      color: $white;
+      &:hover {
+        text-decoration-color: $white;
+      }
+    }
+  }
+  &__tags {
+    display: flex;
+    margin: -5px;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &__tag {
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration-color: $white;
+    color: $white;
+    margin: 5px;
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+.tour-nav {
+  margin-bottom: 25px;
+  @media (max-width: 1199px) {
+    margin-bottom: -5px;
+  }
+  &__item {
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: inline-block;
+    transition: .2s ease-in-out;
+    font-weight: 500;
+    @media (max-width: 600px) {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 6px 10px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      text-decoration-color: transparent;
+      transition: .2s ease-in-out;
+    }
+    &.active {
+      color: $orange;
+      background-color: $white;
+      text-decoration-color: transparent;
+    }
+  }
+
+}

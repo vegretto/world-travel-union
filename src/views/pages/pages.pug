@@ -1,0 +1,30 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .pages-list
+            a(href="index.html") Главная
+            a(href="active-tours.html") Активные туры
+            a(href="craft-tours.html") Крафтовые туры
+            a(href="tour-card.html") Страница тура
+            a(href="hotel-and-flight.html") Отель и перелет
+            a(href="about.html") О компании
+            a(href="promo-list.html") Список акций
+            a(href="promo-single.html") Страница акции
+            //a(href="sale.html") Скидки
+            a(href="testimonials.html") Отзывы
+            a(href="price-warranty.html") Гарантия цены
+            a(href="tours-group.html") Группы туров
+            a(href="tours-selections.html") Подборки туров
+            a(href="tours-russia.html") Туры по России
+            a(href="hot-tours.html") Горящие туры
+            a(href="countries-and-hotels.html") Страны и отели
+            a(href="policy.html") Страница соглашения
+            a(href="404.html") 404
+            a(href="contacts.html") Контакты
+
+block footer
+    include ../components/footer

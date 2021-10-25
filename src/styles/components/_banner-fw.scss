@@ -1,0 +1,89 @@
+.banner-fw {
+  &__inner {
+    display: flex;
+    position: relative;
+    background: $purple-gradient;
+    padding: 40px 70px;
+    overflow: hidden;
+    border-radius: 18px;
+    color: $white;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    @media (max-width: 600px) {
+      padding: 30px 20px;
+    }
+  }
+  &__bg-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__left {
+    flex-basis: 360px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 991px) {
+      flex-basis: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  &__right {
+    flex-basis: 400px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 991px) {
+      flex-basis: auto;
+    }
+  }
+  &__title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 22px;
+  }
+  &__subtitle {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 50px;
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__inner-box {
+    display: flex;
+    align-items: flex-start;
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
+  }
+  .phones {
+    margin-left: 0;
+    @media (max-width: 767px) {
+      margin-right: 30px;
+    }
+    @media (max-width: 420px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    a {
+      color: $white;
+      &:hover {
+        text-decoration-color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.price-warranty {
+  margin-bottom: 70px;
+  &__title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    color: $white;
+    padding: 28px;
+    background: linear-gradient(125.48deg, #522478 27.14%, #FF6162 99.32%);
+    border-radius: 10px;
+    margin-bottom: 60px;
+  }
+  &__content {
+    max-width: 965px;
+    margin: 0 auto;
+  }
+}

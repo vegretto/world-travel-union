@@ -1,0 +1,68 @@
+.advantages-fw {
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -20px;
+    background: $purple-gradient;
+    padding: 50px 70px;
+    border-radius: 15px;
+    @media (max-width: 991px) {
+      margin: -20px 0 0;
+    }
+    @media (max-width: 767px) {
+      padding: 30px 10px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    flex-basis: calc(50% - 40px);
+    margin: 20px;
+    @media (max-width: 991px) {
+      flex-basis: 100%;
+      margin: 20px 0;
+    }
+    @media (max-width: 600px) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  &__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 10px;
+    @media (max-width: 600px) {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  &__title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $white;
+    margin-bottom: 10px;
+    @media (max-width: 600px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 21px;
+    color: $white;
+  }
+}

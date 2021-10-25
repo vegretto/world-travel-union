@@ -1,0 +1,19 @@
+.banner-fw
+    ._container.container
+        ._inner
+            ._bg-img
+                +picture('banner-fw-bg1', 'png', '175', '175')
+            ._left
+                ._title Подберем тур<br>под ваш бюджет
+                ._subtitle Предложим от трех вариантов отдыха под бюджет вашего путешествия.
+            ._right
+                ._text Не нужно ждать акции и тратить время на поиск. Просто оставьте заявку или позвоните нам:
+                ._inner-box
+                    .phones
+                        ._phone
+                            +icon('phone')
+                            a(href="tel:+74959842944") +7 (495) 984-29-44
+                        ._phone
+                            +icon('whatsapp')
+                            a(href="https://wa.me/79687391579") +7 (968) 739-15-79
+                    button.common-btn.common-btn--orange.js-open-modal(data-modal="#modal-callback") Обратный звонок

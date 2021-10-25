@@ -1,0 +1,29 @@
+.filter-results
+    ._top
+        ._found Найдено туров: 31
+        ._sorting
+            ._sorting-text Сортировать по:
+            ._sorting-controls
+                ._sorting-control.js-toggle.active Популярности
+                ._sorting-control.js-toggle Цене
+                ._sorting-control.js-toggle Количеству дней
+                ._sorting-control.js-toggle Ближайшей дате
+                ._mobile-controls
+                    .form-group.form-group--select
+                        .custom-select.js-custom-select
+                            .custom-select__value.js-open-popup Популярности
+                            .custom-select-options.js-popup
+                                .custom-select-option Популярности
+                                .custom-select-option Цене
+                                .custom-select-option Количеству дней
+                                .custom-select-option Ближайшей дате
+                            select#filter-results-controls
+                                option Популярности
+                                option Цене
+                                option Количеству дней
+                                option Ближайшей дате
+            ._sorting-view-type
+                ._sorting-view-type-item.-lg-items.js-toggle.active
+                    +icon('menu2')
+                ._sorting-view-type-item.-sm-items.js-toggle
+                    +icon('menu1')

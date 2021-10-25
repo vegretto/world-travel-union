@@ -1,0 +1,49 @@
+.license {
+  padding: 105px 0 370px;
+  position: relative;
+  @media (max-width: 1199px) {
+    padding: 0
+  }
+  &__image {
+    position: absolute;
+    right: calc(50% + 20px);
+    top: 0;
+    transform: translateX(100%);
+    @media (max-width: 1199px) {
+      position: static;
+      transform: none;
+    }
+    @media (max-width: 600px) {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+  &__box {
+    padding: 50px;
+    background-color: $light-blue;
+    height: 300px;
+    @media (max-width: 1199px) {
+      height: auto;
+      padding: 30px 15px;
+      width: calc(100% + 30px);
+      margin: 0 -15px;
+    }
+  }
+  &__text {
+    font-family: 'Gilroy', 'sans-serif';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 540px;
+    @media (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

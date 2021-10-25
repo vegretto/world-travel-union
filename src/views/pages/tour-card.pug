@@ -1,0 +1,26 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--tour-card
+        .tour-top-wrapper
+            include ../components/tour-top
+        section.tour-description-section
+            include ../components/tour-description
+        section.tour-highlights-section
+            include ../components/tour-highlights
+        .tour-program-wrapper
+            include ../components/tour-program
+        section.similar-tours-section.blue-bg
+            include ../components/similar-tours
+            .btns-wrapper.-more
+                button.common-btn.common-btn--lg.common-btn--orange Показать все
+        section.testimonials-section
+            include ../components/testimonials
+        section.promo-section
+            include ../components/promo
+
+block footer
+    include ../components/footer

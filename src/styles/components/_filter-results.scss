@@ -1,0 +1,117 @@
+.filter-results {
+  margin-bottom: 15px;
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+  &__found {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $c4-light-gray;
+    margin-bottom: 12px;
+  }
+  &__sorting {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1;
+    @media (max-width: 767px) {
+      padding: 10px 15px;
+    }
+  }
+  &__sorting-text {
+    font-weight: 700;
+    margin-right: 25px;
+    @media (max-width: 767px) {
+      margin-right: 10px;
+    }
+  }
+  &__sorting-controls {
+    display: flex;
+    margin-right: auto;
+  }
+  &__sorting-control {
+    margin-right: 25px;
+    border-bottom: 1px dashed $medium-gray;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      display: none;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      color: $orange;
+      font-weight: 700;
+      border-color: transparent;
+    }
+  }
+  &__sorting-view-type {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &__sorting-view-type-item {
+    cursor: pointer;
+    @media (max-width: 767px) {
+      display: none;
+    }
+    &--lg-items {
+      margin-right: 13px;
+      .icon {
+        width: 30px;
+        height: 30px;
+        fill: $c4-light-gray;
+        pointer-events: none;
+      }
+    }
+    &--sm-items {
+      .icon {
+        width: 22px;
+        height: 22px;
+        fill: $c4-light-gray;
+        pointer-events: none;
+      }
+    }
+    &.active {
+      .icon {
+        fill: $purple;
+      }
+    }
+  }
+  &__mobile-controls {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
+    .custom-select {
+      color: $orange;
+      font-size: 16px;
+      line-height: 19px;
+      &:before {
+        right: 2px;
+      }
+      &__value {
+        padding: 8px 15px 8px 0;
+        font-weight: 700;
+      }
+      &-options {
+        border: 1px solid $c4-light-gray;
+        box-sizing: border-box;
+        border-radius: 8px;
+        min-width: 160px;
+      }
+      &-option {
+        color: $black;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+}

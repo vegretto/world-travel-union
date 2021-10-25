@@ -1,0 +1,72 @@
+- var filtersByActivity = ['Восхождения', 'Покорение Килиманджаро', 'Сафари', 'Экспедиции', 'Треккинги', 'Экскурсионные туры', 'Горнолыжные курорты', 'Туры с детьми']
+- var filtersByRegions = ['Африка', 'Северная Америка', 'Латинская Америка', 'Россия', 'Европа', 'Азия', 'Арктика / Антарктика']
+- var filtersByCountries = ['Эфиопия', 'Марокко', 'Намибия', 'Карокко', 'Варокко', 'Мамибия', 'ЮАР', 'Камибия', 'КАР', 'ВАР']
+- var filtersByMonth = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+- var controls = ['Туры по виду активности', 'Туры по регионам и странам', 'По сезону']
+
+form
+    .tours-filter.js-tabs
+        ._controls
+            ._control.active.js-tabs-control(data-tab="#by-activity") Туры по виду активности
+            ._control.js-tabs-control(data-tab="#by-regions") Туры по регионам и странам
+            ._control.js-tabs-control(data-tab="#by-seasons") По сезону
+            ._mobile-controls
+                .form-group.form-group--select
+                    .custom-select.js-custom-select
+                        .custom-select__value.js-open-popup Туры по виду активности
+                        .custom-select-options.js-popup
+                            .custom-select-option.js-tabs-control(data-tab="#by-activity") Туры по виду активности
+                            .custom-select-option.js-tabs-control(data-tab="#by-regions") Туры по регионам и странам
+                            .custom-select-option.js-tabs-control(data-tab="#by-seasons") По сезону
+                        select#filter-controls
+                            option Туры по виду активности
+                            option Туры по регионам и странам
+                            option По сезону
+        ._tabs
+            ._tab.js-tab.active#by-activity
+                ._items
+                    each val in filtersByActivity
+                        +form-group-checkbox('filters-item[' + filtersByActivity.indexOf(val) +']', val, false, false, 'filters-checkbox', 'filters-checkbox-label', 'form-group--filters-checkbox js-filter-checkbox')
+            ._tab.js-tab#by-regions
+                ._items
+                    each val in filtersByRegions
+                        +form-group-checkbox('filters-item[' + filtersByRegions.indexOf(val) + 1 + ']', val, false, false, 'filters-checkbox', 'filters-checkbox-label', 'form-group--filters-checkbox js-filter-checkbox')
+                ._items.-lg
+                    each val in filtersByCountries
+                        .form-group.form-group--checkbox.form-group--filters-checkbox-lg.js-filter-checkbox
+                            label.filters-checkbox-label(for='filters-item[' + filtersByCountries.indexOf(val) + 2 +']')
+                                ._img
+                                    +picture('region' + (filtersByCountries.indexOf(val) + 1), 'png', '120', '120')
+                                ._country-name= val
+                            input.filters-checkbox(type="checkbox" id='filters-item[' + filtersByCountries.indexOf(val) + 2 +']')
+            ._tab.js-tab#by-seasons
+                ._items
+                    .form-group.form-group--checkbox.form-group--filters-checkbox-md.js-filter-checkbox
+                        label.filters-checkbox-label(for='filters-item[61]')
+                            ._icon
+                               +icon('summer')
+                            ._season-name Лето
+                        input.filters-checkbox(type="checkbox" id='filters-item[61]')
+                    .form-group.form-group--checkbox.form-group--filters-checkbox-md.js-filter-checkbox
+                        label.filters-checkbox-label(for='filters-item[62]')
+                            ._icon
+                               +icon('fall')
+                            ._season-name Осень
+                        input.filters-checkbox(type="checkbox" id='filters-item[62]')
+                    .form-group.form-group--checkbox.form-group--filters-checkbox-md.js-filter-checkbox
+                        label.filters-checkbox-label(for='filters-item[63]')
+                            ._icon
+                               +icon('winter')
+                            ._season-name Зима
+                        input.filters-checkbox(type="checkbox" id='filters-item[63]')
+                    .form-group.form-group--checkbox.form-group--filters-checkbox-md.js-filter-checkbox
+                        label.filters-checkbox-label(for='filters-item[64]')
+                            ._icon
+                               +icon('spring')
+                            ._season-name Весна
+                        input.filters-checkbox(type="checkbox" id='filters-item[64]')
+                ._items
+                    each val in filtersByMonth
+                        +form-group-checkbox('filters-item[' + filtersByMonth.indexOf(val) + 3 + ']', val, false, false, 'filters-checkbox', 'filters-checkbox-label', 'form-group--filters-checkbox js-filter-checkbox')
+    .clear-filters
+        button._btn.js-clear-filters Сбросить фильтры

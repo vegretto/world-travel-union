@@ -1,0 +1,207 @@
+.tour-top {
+  &__main-img {
+    position: relative;
+    height: 400px;
+    @media (max-width: 767px) {
+      height: 275px;
+    }
+  }
+  &__container {
+    height: 100%;
+  }
+  &__main-img-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &__info {
+    background: linear-gradient(-290.75deg, #11998E 26.17%, #38EF7D 102.82%);
+    padding: 13px 15px;
+  }
+  &__info-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__info-season {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 991px) {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+  }
+  &__info-subtitle {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: $white;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &--season-subtitle {
+      @media (max-width: 991px) {
+        margin-right: 10px;
+      }
+    }
+  }
+  &__info-bold {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &--duration {
+      @media (max-width: 991px) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+  &__price {
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+
+  }
+  &__price-total {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: $white;
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  &__price_a_day {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    display: flex;
+  }
+  &__price-label {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: $purple;
+    color: $white;
+    border-radius: 30px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    margin-left: 10px;
+    svg {
+      width: 10px;
+      height: 10px;
+      margin-right: 7px;
+    }
+  }
+  &__closest-dates {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 991px) {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    a {
+      font-size: 12px;
+      line-height: 27px;
+      text-decoration: underline;
+      color: $white;
+      font-weight: 400;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .tour-top__info-bold {
+      @media (max-width: 991px) {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  &__misc-info {
+    background-color: $light-blue;
+    padding: 30px 0;
+  }
+  &__misc-info-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: -10px;
+    }
+    @media (max-width: 600px) {
+      argin: -10px -5px;
+    }
+  }
+  &__misc-info-item {
+    display: flex;
+    align-items: center;
+    @media (max-width: 991px) {
+      flex-basis: calc(100% / 3 - 20px);
+      margin: 10px;
+    }
+    @media (max-width: 767px) {
+      flex-basis: calc(100% / 2 - 20px);
+    }
+    @media (max-width: 600px) {
+      margin: 10px 5px;
+    }
+  }
+  &__misc-info-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    @media (max-width: 600px) {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $orange;
+    }
+  }
+  &__misc-info-subtitle {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  &__misc-info-text {
+    font-size: 15px;
+    line-height: 21px;
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}

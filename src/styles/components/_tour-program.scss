@@ -1,0 +1,120 @@
+.tour-program-wrapper {
+  padding-top: 40px;
+  @media (max-width: 767px) {
+    padding-top: 30px;
+  }
+}
+
+.tour-program {
+  padding-bottom: 90px;
+  &__inner {
+    display: flex;
+    @media (max-width: 1199px) {
+      flex-direction: column;
+    }
+  }
+  &__sidebar-box {
+    flex-basis: 270px;
+    max-width: 270px;
+    margin-right: 30px;
+    @media (max-width: 1199px) {
+      flex-basis: auto;
+      max-width: none;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  &__main-box {
+    max-width: 870px;
+    flex-basis: 870px;
+    @media (max-width: 1199px) {
+      flex-basis: auto;
+      max-width: none;
+    }
+  }
+  &__days {
+    margin-bottom: 60px;
+  }
+  &__slider-wrapper {
+    position: relative;
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+    @media (max-width: 991px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  &__slider {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .slick-slide {
+    img {
+      margin: 0 auto;
+      max-width: 770px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 8px;
+      @media (max-width: 991px) {
+        height: auto;
+      }
+    }
+  }
+  &__slider--testimonials {
+    .slick-slide {
+      img {
+        margin: 0;
+        max-width: 100%;
+        width: auto;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+    }
+  }
+  &__testimonials {
+    margin-bottom: 80px;
+  }
+  &__subtitle-sm {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+  &__price {
+    margin-bottom: 85px;
+    .common-ul {
+      margin-bottom: 20px;
+      li {
+        b {
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &__sale {
+    max-width: 750px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 3px solid $purple;
+    p {
+      max-width: 605px;
+    }
+    .btns-wrapper {
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  &__sale-title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    color: $purple;
+  }
+  &__rooms-n-food {
+
+  }
+}

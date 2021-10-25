@@ -1,0 +1,49 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--promo-list
+        .container
+            .breadcrumbs
+                a(href="#").breadcrumbs__item Хлебные крошки
+                a(href="#").breadcrumbs__item Хлебные крошки
+                .breadcrumbs__item Хлебные крошки
+            h2.h2-common.txt-left Акции и скидки на путешествия <br> с WORLD TRAVEL UNION
+        section.promo-section
+            .promo
+                ._container.container
+                    ._items
+                        a(href="#")._item
+                            .bg-wrapper
+                                +picture('promo1', 'png', '370', '434')
+                            ._item-content
+                                ._item-title Неделя в уютной студии в центре&nbsp;Турции бесплатно
+                                ._item-btn.common-btn.common-btn--orange Подробнее
+                        a(href="#")._item
+                            .bg-wrapper
+                                +picture('promo2', 'png', '370', '434')
+                            ._item-content
+                                ._item-title В подарок Выходные&nbsp;на&nbsp;Кавказе
+                                ._item-text При покупке любых туров на 300&nbsp;000 рублей
+                                ._item-btn.common-btn.common-btn--orange Подробнее
+                        a(href="#")._item
+                            .bg-wrapper
+                                +picture('promo3', 'png', '370', '434')
+                            ._item-content
+                                ._item-title В подарок Выходные&nbsp;на&nbsp;Кавказе
+                                ._item-text При покупке любых туров на 300&nbsp;000 рублей
+                                ._item-btn.common-btn.common-btn--orange Подробнее
+        section.blue-bg
+            .container
+                h2.h2-common.-hot
+                    +icon('flame')
+                    | Горящие туры по всему миру
+                <div class="tv-hot-tours tv-moduleid-995584 mb-4"></div>
+                .btns-wrapper
+                    a(href="#").common-btn.common-btn--orange Показать все скидки
+        section.seo-text-section
+            include ../components/seo-text
+block footer
+    include ../components/footer

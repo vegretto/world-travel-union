@@ -1,0 +1,127 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--testimonials
+        .container
+            .breadcrumbs
+                a(href="#").breadcrumbs__item Хлебные крошки
+                a(href="#").breadcrumbs__item Хлебные крошки
+                .breadcrumbs__item Хлебные крошки
+            .title-wrapper
+                h2.h2-common Отзывы об отдыхе с&nbsp;World&nbsp;Travel&nbsp;Union #[sup.title-num 17]
+                button.common-btn.common-btn--orange.js-scroll-to(data-scroll="#add-testimonial") Оставить отзыв
+        section.testimonials-section
+            .testimonials
+                ._container.container
+                    ._items
+                        ._item
+                            ._name Константин Константинопольский
+                            ._date 12.05.2021
+                            ._tags Тур «Название»  /  7 ночей  /  отель «Название»
+                            ._text Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.
+                            ._images
+                                ._image
+                                    +pictureFancybox('testim1', 'png', 175, 130, 'testimonials1')
+                                ._image
+                                    +pictureFancybox('testim2', 'png', 175, 130, 'testimonials1')
+                                ._image
+                                    +pictureFancybox('testim3', 'png', 175, 130, 'testimonials1')
+                                ._image
+                                    +pictureFancybox('testim4', 'png', 175, 130, 'testimonials1')
+                                ._image
+                                    +pictureFancybox('testim5', 'png', 175, 130, 'testimonials1')
+                                a(href='img/testim1.png' data-fancybox='testimonials1')._image.-more
+                                    ._more-block +6 фото
+                                ._image.-hidden
+                                    +pictureFancybox('testim2', 'png', 175, 130, 'testimonials1')
+                                ._image.-hidden
+                                    +pictureFancybox('testim3', 'png', 175, 130, 'testimonials1')
+                                ._image.-hidden
+                                    +pictureFancybox('testim4', 'png', 175, 130, 'testimonials1')
+                        ._item
+                            ._name Константин Константинопольский
+                            ._date 12.05.2021
+                            ._tags Тур «Название»  /  7 ночей  /  отель «Название»
+                            ._text Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.
+                        ._item
+                            ._name Константин Константинопольский
+                            ._date 12.05.2021
+                            ._tags Тур «Название»  /  7 ночей  /  отель «Название»
+                            ._text Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий требуют определения и уточнения соответствующий условий активизации.
+                    .btns-wrapper
+                        a(href="#")._btn.common-btn.common-btn--lg.common-btn--orange Показать еще
+        section.banner-fw-section
+            include ../components/banner-fw
+        section.add-testimonial-section#add-testimonial
+            include ../components/add-testimonial
+        section.similar-tours-section.blue-bg
+            .similar-tours
+                ._container.container
+                    ._inner
+                        h2.h2-common Популярные туры
+                        .tours-wrapper.-sm
+                            .tours-item.-sm
+                                ._img
+                                    ._closest-dates
+                                        span Ближайшие даты 23.05.2021
+                                        a(href="#") Смотреть все
+                                    +picture('tour-sm1', 'png', '570', '339')
+                                ._content
+                                    ._tags
+                                        ._tag.-purple Русский гид
+                                        ._tag.-orange Только у нас!
+                                        ._tag.-blue Скоро
+                                    ._region Африка
+                                    a(href="#")._name Восхождение на Килиманджаро. Ронгай + сафари
+                                    ._description Восхождение на Килиманджаро с местным гидом и 2 дня сафари после горы
+                                    ._inner
+                                        ._inner-item.-duration 5&nbsp;дней / 4&nbsp;ночи
+                                        ._inner-item.-price
+                                            span._price-a-day 10 316 ₽/день
+                                            span._price-total 72 215 ₽ (950 $)
+                                            ._label
+                                                ._label-icon
+                                                    +icon('sale')
+                                                span Лучшая цена
+                                    .btns-wrapper
+                                        a(href="#").common-btn.common-btn--lg.common-btn--green Программа и даты тура
+                                    ._hr
+                                    ._hashtags
+                                        a(href="#") #восхождение
+                                        a(href="#") #треккинг
+                            .tours-item.-sm
+                                ._img
+                                    ._closest-dates
+                                        span Ближайшие даты 23.05.2021
+                                        a(href="#") Смотреть все
+                                    +picture('tour-sm2', 'png', '570', '339')
+                                ._content
+                                    ._tags
+                                        ._tag.-purple Русский гид
+                                        ._tag.-orange Только у нас!
+                                        ._tag.-blue Скоро
+                                    ._region Африка
+                                    a(href="#")._name Восхождение на Килиманджаро. Ронгай + сафари
+                                    ._description Восхождение на Килиманджаро с местным гидом и 2 дня сафари после горы
+                                    ._inner
+                                        ._inner-item.-duration 5&nbsp;дней / 4&nbsp;ночи
+                                        ._inner-item.-price
+                                            span._price-a-day 10 316 ₽/день
+                                            span._price-total 72 215 ₽ (950 $)
+                                            ._label
+                                                ._label-icon
+                                                    +icon('sale')
+                                                span Лучшая цена
+                                    .btns-wrapper
+                                        a(href="#").common-btn.common-btn--lg.common-btn--green Программа и даты тура
+                                    ._hr
+                                    ._hashtags
+                                        a(href="#") #восхождение
+                                        a(href="#") #треккинг
+            .btns-wrapper.-more
+                button.common-btn.common-btn--lg.common-btn--orange Показать все
+block footer
+    include ../components/footer

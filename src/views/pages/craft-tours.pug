@@ -1,0 +1,120 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--craft-tours
+        .container
+            .breadcrumbs
+                a(href="#").breadcrumbs__item Хлебные крошки
+                a(href="#").breadcrumbs__item Хлебные крошки
+                .breadcrumbs__item Хлебные крошки
+            h2.h2-common.txt-left Уникальные крафтовые туры от World Travel Union
+            .sub-text.txt-left
+                ._underlined Создадим тур любой сложности специально для вас<br>— от пляжного отдыха  до полярных экспедиций и восхождения на Эверест
+        .craft-examples
+            ._container.container
+                ._items
+                    ._item
+                        video._video(autoplay loop muted width="370" height="480")
+                            source(src='video/05.mp4' type='video/mp4')
+                        ._text Дойти в отлив по морскому дну до острова Мон-Сен-Мишель во Франции
+                    ._item
+                        video._video(autoplay loop muted width="370" height="480")
+                            source(src='video/06.mp4' type='video/mp4')
+                        ._text Сфотографироваться с&nbsp;гигантской черепахой на&nbsp;Шри-Ланке
+                    ._item
+                        video._video(autoplay loop muted width="370" height="480")
+                            source(src='video/01.mp4' type='video/mp4')
+                        ._text Переночевать в самом экстремальном отеле в мире в&nbsp;Перу
+        .container
+            .h1-common.txt-orange.txt-center С нами возможно все!
+            .book-tour
+                h2.h2-common Расскажите о вашей мечте, <br> и мы построим к ней маршрут
+                form._common-form.common-form
+                    ._inner
+                        ._left
+                            +form-group('text', 'tp-name', 'Имя*', true, 'input-common', 'label-common', 'Имя')
+                            +form-group('tel', 'tp-tel', 'Телефон*', true, 'input-common', 'label-common', '+7 (___) ___–__–__')
+                            .fg-wrapper
+                                +form-group('email', 'tp-email', 'E-mail', false, 'input-common', 'label-common', 'example@pochta.ru')
+                                +form-group('number', 'tp-num', 'Количество человек', true, 'input-common input-common-w-icon', 'label-common', '1')
+                        ._right
+                            +form-group-date('tp-date', 'Даты', true, 'input-common', 'label-common', 'Укажите даты или месяц')
+                            +form-group-textarea('tp-comment', 'Ваши пожелания или вопрос', true, '', 'input-common', 'label-common', 'Здесь вы можете указать желаемый тип проживания, питания, развлечений или задать любой другой вопрос')
+                    .btns-wrapper
+                        button.common-btn.common-btn--lg.common-btn--orange Отправить
+                        +form-group-checkbox-allow('tp-allow', true, true, 'custom-checkbox', 'custom-checkbox__label')
+        section.advantages-fw-section
+            include ../components/advantages-fw
+        section.similar-tours-section
+            .similar-tours
+                ._container.container
+                    ._inner
+                        h2.h2-common Возможно, ваша мечта уже близко
+                        .tours-wrapper.-sm
+                            .tours-item.-sm
+                                ._img
+                                    ._closest-dates
+                                        span Ближайшие даты 23.05.2021
+                                        a(href="#") Смотреть все
+                                    +picture('tour-sm1', 'png', '570', '339')
+                                ._content
+                                    ._tags
+                                        ._tag.-purple Русский гид
+                                        ._tag.-orange Только у нас!
+                                        ._tag.-blue Скоро
+                                    ._region Африка
+                                    a(href="#")._name Восхождение на Килиманджаро. Ронгай + сафари
+                                    ._description Восхождение на Килиманджаро с местным гидом и 2 дня сафари после горы
+                                    ._inner
+                                        ._inner-item.-duration 5&nbsp;дней / 4&nbsp;ночи
+                                        ._inner-item.-price
+                                            span._price-a-day 10 316 ₽/день
+                                            span._price-total 72 215 ₽ (950 $)
+                                            ._label
+                                                ._label-icon
+                                                    +icon('sale')
+                                                span Лучшая цена
+                                    .btns-wrapper
+                                        a(href="#").common-btn.common-btn--lg.common-btn--green Программа и даты тура
+                                    ._hr
+                                    ._hashtags
+                                        a(href="#") #восхождение
+                                        a(href="#") #треккинг
+                            .tours-item.-sm
+                                ._img
+                                    ._closest-dates
+                                        span Ближайшие даты 23.05.2021
+                                        a(href="#") Смотреть все
+                                    +picture('tour-sm2', 'png', '570', '339')
+                                ._content
+                                    ._tags
+                                        ._tag.-purple Русский гид
+                                        ._tag.-orange Только у нас!
+                                        ._tag.-blue Скоро
+                                    ._region Африка
+                                    a(href="#")._name Восхождение на Килиманджаро. Ронгай + сафари
+                                    ._description Восхождение на Килиманджаро с местным гидом и 2 дня сафари после горы
+                                    ._inner
+                                        ._inner-item.-duration 5&nbsp;дней / 4&nbsp;ночи
+                                        ._inner-item.-price
+                                            span._price-a-day 10 316 ₽/день
+                                            span._price-total 72 215 ₽ (950 $)
+                                            ._label
+                                                ._label-icon
+                                                    +icon('sale')
+                                                span Лучшая цена
+                                    .btns-wrapper
+                                        a(href="#").common-btn.common-btn--lg.common-btn--green Программа и даты тура
+                                    ._hr
+                                    ._hashtags
+                                        a(href="#") #восхождение
+                                        a(href="#") #треккинг
+            .btns-wrapper.-more
+                button.common-btn.common-btn--lg.common-btn--purple Показать все
+        section.testimonials-section
+            include ../components/testimonials
+block footer
+    include ../components/footer

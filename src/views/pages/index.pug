@@ -1,0 +1,36 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--main
+        <div class="tv-image-slider tv-moduleid-995586"></div>
+        .module-wrapper
+            ._inner
+                <div class="tv-search-form tv-moduleid-1368055"></div>
+        section.blue-bg
+            .container
+                h2.h2-common.-hot
+                    +icon('flame')
+                    | Горящие туры по всему миру
+                <div class="tv-hot-tours tv-moduleid-969599 mb-4"></div>
+                .btns-wrapper
+                    a(href="#").common-btn.common-btn--orange Показать больше горящих туров
+        include ../components/tours-banners
+        section.promo-section
+            include ../components/promo
+        section.blue-bg
+            .container
+                h2.h2-common Календарь вылетов
+                <div class="tv-calendar tv-moduleid-995582"></div>
+        include ../components/map-section
+block footer
+    include ../components/footer
+
+
+
+
+
+
+

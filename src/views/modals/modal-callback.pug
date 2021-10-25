@@ -1,0 +1,11 @@
+.modal.modal--callback#modal-callback
+    .modal__inner
+        .modal__close-cross.js-close-modal
+            +icon('close')
+        h2.h2-common Обратный звонок
+        form._common-form.common-form
+            +form-group('text', 'tp-name', 'Имя*', true, 'input-common', 'label-common', 'Имя')
+            +form-group('tel', 'tp-tel', 'Телефон*', true, 'input-common', 'label-common', '+7 (___) ___–__–__')
+            .btns-wrapper.-column
+                button.common-btn.common-btn--lg.common-btn--orange Отправить
+                +form-group-checkbox-allow('tp-allow', true, true, 'custom-checkbox', 'custom-checkbox__label')

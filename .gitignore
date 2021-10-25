@@ -1,0 +1,5 @@
+/node_modules
+/.idea
+/temp
+/backup
+package-lock.json

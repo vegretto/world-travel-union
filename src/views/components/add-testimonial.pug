@@ -1,0 +1,12 @@
+.add-testimonial
+    ._container.container
+        form._common-form.common-form
+            ._inner
+                h2.h2-common Расскажите о своих впечатлениях<br>об отдыхе и общении с менеджерами
+                .fg-wrapper
+                    +form-group('text', 'at-name', 'Имя', false, 'input-common', 'label-common', 'Имя')
+                    +form-group('text', 'at-name', 'Название тура или направление', false, 'input-common', 'label-common', 'Название тура или направление')
+                +form-group-textarea('at-comment', 'Пожелания или вопрос*', true, '', 'input-common', 'label-common', 'Ваш отзыв*')
+                .btns-wrapper
+                    button.common-btn.common-btn--lg.common-btn--orange.js-success-btn Отправить
+                    +form-group-checkbox-allow('tp-allow', true, true, 'custom-checkbox', 'custom-checkbox__label')

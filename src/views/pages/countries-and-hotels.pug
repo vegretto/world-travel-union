@@ -1,0 +1,64 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--countries-and-hotels
+        .container
+            .breadcrumbs
+                a(href="#").breadcrumbs__item Хлебные крошки
+                a(href="#").breadcrumbs__item Хлебные крошки
+                .breadcrumbs__item Хлебные крошки
+        section
+            .container
+                h2.h2-common Выбирайте любую страну для путешествия вашей мечты
+                <div class="tv-country tv-moduleid-995583"></div>
+        .container
+                .book-tour
+                    h2.h2-common Расскажите о вашей мечте, <br> и мы построим к ней маршрут
+                    form._common-form.common-form
+                        ._inner
+                            ._left
+                                +form-group('text', 'tp-name', 'Имя*', true, 'input-common', 'label-common', 'Имя')
+                                +form-group('tel', 'tp-tel', 'Телефон*', true, 'input-common', 'label-common', '+7 (___) ___–__–__')
+                                .fg-wrapper
+                                    +form-group('email', 'tp-email', 'E-mail', false, 'input-common', 'label-common', 'example@pochta.ru')
+                                    +form-group('number', 'tp-num', 'Количество человек', true, 'input-common input-common-w-icon', 'label-common', '1')
+                            ._right
+                                +form-group-date('tp-date', 'Даты', true, 'input-common', 'label-common', 'Укажите даты или месяц')
+                                +form-group-textarea('tp-comment', 'Ваши пожелания или вопрос', true, '', 'input-common', 'label-common', 'Здесь вы можете указать желаемый тип проживания, питания, развлечений или задать любой другой вопрос')
+                        .btns-wrapper
+                            button.common-btn.common-btn--lg.common-btn--orange Отправить
+                            +form-group-checkbox-allow('tp-allow', true, true, 'custom-checkbox', 'custom-checkbox__label')
+        section.popular-tour-selection-wrapper
+            .popular-tour-selection
+                ._container.container
+                    ._inner
+                        h2.h2-common.txt-left Популярные подборки туров
+                        ._items
+                            ._col
+                                a(href="#")._item #Активные туры
+                                a(href="#")._item #Активные туры в Азкабан
+                                a(href="#")._item #Трекинг
+                                a(href="#")._item #Трекинг по лесам Азии
+                            ._col
+                                a(href="#")._item #Активные туры
+                                a(href="#")._item #Активные туры в Азкабан
+                                a(href="#")._item #Трекинг
+                                a(href="#")._item #Трекинг по лесам Азии
+                            ._col
+                                a(href="#")._item #Активные туры
+                                a(href="#")._item #Активные туры в Азкабан
+                                a(href="#")._item #Трекинг
+                                a(href="#")._item #Трекинг по лесам Азии
+                            ._col
+                                a(href="#")._item #Активные туры
+                                a(href="#")._item #Активные туры в Азкабан
+                                a(href="#")._item #Трекинг
+                                a(href="#")._item #Трекинг по лесам Азии
+                        .btns-wrapper
+                            button.common-btn.common-btn--orange Смотреть все подборки
+
+block footer
+    include ../components/footer

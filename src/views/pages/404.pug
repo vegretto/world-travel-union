@@ -1,0 +1,36 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.page-wrapper.page-wrapper--error
+        .container
+            .breadcrumbs
+                a(href="#").breadcrumbs__item Хлебные крошки
+                a(href="#").breadcrumbs__item Хлебные крошки
+                .breadcrumbs__item Хлебные крошки
+        section.error-section
+            .error
+                ._container.container
+                    ._wrapper.flex-wrapper
+                        ._inner.flex-inner
+                            h1.h1-common.txt-left.txt-orange Ошибочка 404
+                            ._text.txt-gray Страница, которую вы искали временно недоступна или была удалена.
+                            ._text Кажется, страница взяла неожиданный отпуск и отправилась в путешествие за приключениями. Можно ли ее винить?&nbsp;&#128049;
+                            ._text.-bold.txt-purple А в какое путешествие хотели бы отправиться вы?
+                            ._links
+                                a(href="#")._link-item Путешествия по России
+                                a(href="#")._link-item Горящие туры со скидками
+                                a(href="#")._link-item Крафтовые туры вашей мечты
+                                a(href="#")._link-item Каталог стран и отелей
+                                a(href="#")._link-item Отель+перелет
+                        ._inner.flex-inner
+                            video._video(autoplay loop muted width="310" height="550")
+                                source(src='video/404.mp4' type='video/mp4')
+
+
+
+
+block footer
+    include ../components/footer
