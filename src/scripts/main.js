@@ -398,8 +398,10 @@ $(document).ready(function () {
     let initialFoldedHeight = null;
     let initialText = null;
     $(document).on('click', '.js-read-more-toggle', function (e) {
+
         let vThis = $(e.target);
         let initialHeight = vThis.prev('.js-read-more-wrapper').find($('.js-read-more-container')).height();
+
         if (!vThis.hasClass('opened')) {
             initialFoldedHeight = vThis.prev('.js-read-more-wrapper').height();
             initialText = vThis.find('.read-more__toggle-text').text()

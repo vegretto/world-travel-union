@@ -528,34 +528,7 @@ blockquote {
   }
 }
 
-.read-more {
-  &__wrapper {
-    height: 140px;
-    overflow: hidden;
-  }
-  &__toggle {
-    color: $orange;
-    cursor: pointer;
-    span {
-      pointer-events: none;
-    }
-    &.opened {
-      .read-more__toggle-arrow {
-        transform: rotate(180deg);
-        transition: .2s ease-in-out;
-      }
-    }
-  }
-  &__toggle-text {
-    border-bottom: 1px dashed $orange;
-  }
-  &__toggle-arrow {
-    transition: .2s ease-in-out;
-    display: inline-block;
-    margin-left: 3px;
-    font-size: 14px;
-  }
-}
+
 
 .common-ul {
   list-style: none;
